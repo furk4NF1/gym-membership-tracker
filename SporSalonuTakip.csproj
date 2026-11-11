@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11C122B1-40CF-4D93-9C01-89D18A1E4C11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SporSalonuTakip</RootNamespace>
+    <AssemblyName>SporSalonuTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="LoginForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="MainForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="ChangePasswordForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="PasswordResetForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="UserManagementForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Entities\AppUser.cs" />
+    <Compile Include="Entities\UserRecord.cs" />
+    <Compile Include="Entities\PasswordCredential.cs" />
+    <Compile Include="Helpers\PasswordHasher.cs" />
+    <Compile Include="Helpers\PasswordPolicy.cs" />
+    <Compile Include="Helpers\TemporaryPasswordGenerator.cs" />
+    <Compile Include="Helpers\EmailSender.cs" />
+    <Compile Include="BLL\AuthService.cs" />
+    <Compile Include="BLL\MemberService.cs" />
+    <Compile Include="BLL\UserService.cs" />
+    <Compile Include="BLL\SessionManager.cs" />
+    <None Include="App.config" />
+    <None Include="SQL\Kurulum.sql" />
+    <None Include="KURULUM.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

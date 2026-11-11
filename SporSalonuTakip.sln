@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Version 21
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SporSalonuTakip", "SporSalonuTakip.csproj", "{11C122B1-40CF-4D93-9C01-89D18A1E4C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Default|Any CPU = Default|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C122B1-40CF-4D93-9C01-89D18A1E4C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C122B1-40CF-4D93-9C01-89D18A1E4C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C122B1-40CF-4D93-9C01-89D18A1E4C11}.Default|Any CPU.ActiveCfg = Release|Any CPU
+		{11C122B1-40CF-4D93-9C01-89D18A1E4C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C122B1-40CF-4D93-9C01-89D18A1E4C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9578D49-A4AB-4182-8224-2BEF9295CEC4}.Debug|Any CPU.ActiveCfg = Default
+		{F9578D49-A4AB-4182-8224-2BEF9295CEC4}.Default|Any CPU.ActiveCfg = Default
+		{F9578D49-A4AB-4182-8224-2BEF9295CEC4}.Release|Any CPU.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CF66A64-9817-4790-B026-1C2D6E62CC22}
+	EndGlobalSection
+EndGlobal

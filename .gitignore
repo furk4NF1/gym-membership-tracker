@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+
+# Build output
+[Bb]in/
+[Oo]bj/
+*.exe
+*.pdb
+
+# Local logs and editor backups
+*.log
+*.bak
+*.tmp
