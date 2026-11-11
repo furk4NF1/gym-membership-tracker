@@ -4,7 +4,7 @@
 
 ## Features
 
-- Add, edit, search through, and remove member records.
+- Add, edit, and remove member records.
 - Track monthly, quarterly, and yearly memberships, including expiry status.
 - Use separate Admin and User roles.
 - Store passwords with PBKDF2 and per-user salts; require a password change on first login.
